@@ -1,3 +1,14 @@
+
+# Basic Math Question For Dsa 
+
+This is a repo where you will get all the basic Math Question. 
+This Question will help you in your Dsa Learning Journey.
+
+
+### 1. Check whether given number is Negative , positive or Zero ?
+
+
+```java
 package Basic_Math_Questions;
 
 import java.util.Scanner;
@@ -34,3 +45,6 @@ public class PositiveAndNegative {
 
     }
 }
+
+
+```
