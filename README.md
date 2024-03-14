@@ -48,3 +48,69 @@ public class PositiveAndNegative {
 
 
 ```
+
+### 2. Given a number N, the task is to return the count of digits in this number.
+
+```java
+package Basic_Math_Questions;
+
+
+import java.util.Scanner;
+
+// Count digit in number
+public class DIgitCount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number :-  ");
+        int n = sc.nextInt();
+        int count = 0 ;
+
+        // Approach one
+        while (n !=0){
+            n = n /10;
+            count++;
+        }
+        // Approach two
+        for (int i = n; n != 0 ;i--){
+            n = n/10;
+            count++;
+        }
+
+        System.out.println(count);
+    }
+}
+
+
+```
+
+### 3. Given an integer, write a function that returns true if the given number is palindrome, else false. For example, 12321 is palindrome, but 1451 is not palindrome. 
+
+```java
+package Basic_Math_Questions;
+
+import java.util.Scanner;
+
+public class PalindromNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number :- ");
+        int num = sc.nextInt();
+
+        int temp = num ;
+        int reverse =0;
+        while (num !=0){
+            reverse = (reverse * 10 ) + (num % 10 );
+            num = num /10;
+        }
+
+        if (temp == reverse )
+        {
+            System.out.println("Number is Palindrome");
+        }else {
+            System.out.println("Number is not Palindrome");
+        }
+
+    }
+}
+
+```
