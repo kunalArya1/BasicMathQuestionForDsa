@@ -95,7 +95,6 @@ public class PalindromNumber {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number :- ");
         int num = sc.nextInt();
-
         int temp = num ;
         int reverse =0;
         while (num !=0){
